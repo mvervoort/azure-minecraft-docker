@@ -6,6 +6,11 @@ terraform {
     null                       = "~> 3.1"
     random                     = "~> 3.1"
     time                       = "~> 0.7"
+    dns                        = "~> 3.0.1"
+    docker = {
+      source  = "kreuzwerker/docker"
+      version = "2.9.0"
+    }
   }
   required_version             = "~> 1.0, != 1.1.0" # BUG: https://github.com/hashicorp/terraform/issues/30110
 }
@@ -32,3 +37,9 @@ provider azurerm {
   tenant_id                    = var.tenant_id != null && var.tenant_id != "" ? var.tenant_id : data.azurerm_subscription.default.tenant_id
 }
 data azurerm_subscription primary {}
+
+provider dns {
+}
+
+provider docker {
+}
