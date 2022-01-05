@@ -10,17 +10,18 @@ minecraft_config               = {
   server1                      = {
     allow_ops_only             = "false"
     container_image_tag        = ""
+    icon_file_png              = "visuals/cas1_server1.png" 
     environment_variables      = {
       ALLOW_NETHER             = true
       ANNOUNCE_PLAYER_ACHIEVEMENTS = "true"
       DIFFICULTY               = "easy"
       ENABLE_COMMAND_BLOCK     = true
       EULA                     = true
-      ICON                     = "https://raw.githubusercontent.com/geekzter/azure-minecraft-docker/main/visuals/aci.png"
+      #ICON                     = "https://minecraftstorcas1.blob.core.windows.net/images/cas.png?sp=r&st=2022-01-05T18:21:41Z&se=2032-01-06T02:21:41Z&spr=https&sv=2020-08-04&sr=b&sig=f6pxET%2BP1eRt9U3GG7%2BedXfj2zfGaNT5lxg9DUC5fuU%3D" #"https://raw.githubusercontent.com/geekzter/azure-minecraft-docker/main/visuals/aci.png"
       MAX_PLAYERS              = 10
       MODS                     = null
       MODE                     = "creative"
-      MOTD                     = "Minecraft Server powered by Docker and Azure Container Instance"
+      MOTD                     = "ZeroShino server1"
       OVERRIDE_SERVER_PROPERTIES = true # Use these settings over server.roperties every time the container starts
       SNOOPER_ENABLED          = "false"
       TYPE                     = "PAPER"
@@ -41,6 +42,7 @@ minecraft_ops                  = ["ZeroShino"]
 minecraft_users                = [
     "User1",
     "User2",
+    "User3"
 ]
 subscription_id                = "fa9aad52-e3ac-4a57-a851-fae41f1c870f"
 tenant_id                      = "83fbe6ff-2b94-43d8-913f-98c63084e1eb"

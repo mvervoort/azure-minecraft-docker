@@ -19,7 +19,7 @@ module minecraft {
   container_image_tag          = lookup(each.value, "container_image_tag", "latest")
   container_data_share_name    = replace("minecraft-aci-${each.key}-data-${local.suffix}","-primary","")
   container_modpacks_share_name= replace("minecraft-aci-${each.key}-modpacks-${local.suffix}","-primary","")
-  environment_variables        = each.value["environment_variables"]
+  environment_variables        = merge(each.value["environment_variables"], {"ICON"="${azurerm_storage_account.minecraft_image.primary_blob_endpoint}image/${each.key}.png"})
 
   environment                  = local.environment
 
