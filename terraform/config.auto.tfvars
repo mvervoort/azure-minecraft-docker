@@ -17,10 +17,10 @@ minecraft_config               = {
       DIFFICULTY               = "easy"
       ENABLE_COMMAND_BLOCK     = true
       EULA                     = true
-      #ICON                     = "https://minecraftstorcas1.blob.core.windows.net/images/cas.png?sp=r&st=2022-01-05T18:21:41Z&se=2032-01-06T02:21:41Z&spr=https&sv=2020-08-04&sr=b&sig=f6pxET%2BP1eRt9U3GG7%2BedXfj2zfGaNT5lxg9DUC5fuU%3D" #"https://raw.githubusercontent.com/geekzter/azure-minecraft-docker/main/visuals/aci.png"
+      ICON                     = "https://minecraftstorcas1.blob.core.windows.net/images/cas.png?sp=r&st=2022-01-05T18:21:41Z&se=2032-01-06T02:21:41Z&spr=https&sv=2020-08-04&sr=b&sig=f6pxET%2BP1eRt9U3GG7%2BedXfj2zfGaNT5lxg9DUC5fuU%3D" #"https://raw.githubusercontent.com/geekzter/azure-minecraft-docker/main/visuals/aci.png"
       MAX_PLAYERS              = 10
       MODS                     = null
-      MODE                     = "creative"
+      MODE                     = "survival"
       MOTD                     = "ZeroShino server1"
       OVERRIDE_SERVER_PROPERTIES = true # Use these settings over server.roperties every time the container starts
       SNOOPER_ENABLED          = "false"
@@ -40,9 +40,11 @@ provisoner_email_address       = "mpj.vervoort@gmail.com"
 
 minecraft_ops                  = ["ZeroShino"]
 minecraft_users                = [
-    "User1",
-    "User2",
-    "User3"
+    "ZeroShino",
+    "ZeroShuki",
+    "OneShuki",
+    "Tobias2006",
+    "Aryqnto_"
 ]
 subscription_id                = "fa9aad52-e3ac-4a57-a851-fae41f1c870f"
 tenant_id                      = "83fbe6ff-2b94-43d8-913f-98c63084e1eb"
