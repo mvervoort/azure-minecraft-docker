@@ -17,7 +17,7 @@ minecraft_config               = {
       DIFFICULTY               = "easy"
       ENABLE_COMMAND_BLOCK     = true
       EULA                     = true
-      ICON                     = "https://minecraftstorcas1.blob.core.windows.net/images/cas.png?sp=r&st=2022-01-05T18:21:41Z&se=2032-01-06T02:21:41Z&spr=https&sv=2020-08-04&sr=b&sig=f6pxET%2BP1eRt9U3GG7%2BedXfj2zfGaNT5lxg9DUC5fuU%3D" #"https://raw.githubusercontent.com/geekzter/azure-minecraft-docker/main/visuals/aci.png"
+      ICON                     = "https://zuivelonline.nl/media/uploads/2020/10/Kaas_weetjes1.jpg"
       MAX_PLAYERS              = 10
       MODS                     = null
       MODE                     = "survival"
@@ -26,6 +26,7 @@ minecraft_config               = {
       SNOOPER_ENABLED          = "false"
       TYPE                     = "PAPER"
       VERSION                  = "1.18.1"
+      MEMORY                   = "3G"
     }
     minecraft_server_port      = 25565
     start_time                 = "12:00"
@@ -44,7 +45,9 @@ minecraft_users                = [
     "ZeroShuki",
     "OneShuki",
     "Tobias2006",
-    "Aryqnto_"
+    "Aryqnto_",
+    "Wrench07",
+    "KasqerPK"
 ]
 subscription_id                = "fa9aad52-e3ac-4a57-a851-fae41f1c870f"
 tenant_id                      = "83fbe6ff-2b94-43d8-913f-98c63084e1eb"

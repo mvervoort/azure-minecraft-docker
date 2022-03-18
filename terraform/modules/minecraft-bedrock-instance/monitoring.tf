@@ -4,14 +4,14 @@ resource azurerm_monitor_metric_alert memory {
   name                         = "${var.name}-memory-alert"
   resource_group_name          = var.resource_group_name
   scopes                       = [azurerm_container_group.minecraft_server.id]
-  description                  = "Action will be triggered when Memory usage is greater than 1.9 GB"
+  description                  = "Action will be triggered when Memory usage is greater than 3.9 GB"
 
   criteria {
     metric_namespace           = "microsoft.containerinstance/containergroups"
     metric_name                = "MemoryUsage"
     aggregation                = "Average"
     operator                   = "GreaterThan"
-    threshold                  = 1900000000 # 1.9 GB
+    threshold                  = 3900000000 # 3.9 GB
 
     dimension {
       name                     = "containerName"

@@ -41,7 +41,7 @@ resource azurerm_container_group minecraft_server {
   os_type                      = "linux"
 
   container {
-    cpu                        = "1"
+    cpu                        = "2"
     name                       = "minecraft"
     environment_variables      = local.environment_variables
     image                      = local.container_image
@@ -57,7 +57,7 @@ resource azurerm_container_group minecraft_server {
       success_threshold        = 1
       timeout_seconds          = 10
     }
-    memory                     = "2"
+    memory                     = "4"
     ports {
       port                     = 80
       protocol                 = "TCP"
