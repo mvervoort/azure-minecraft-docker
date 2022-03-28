@@ -24,7 +24,7 @@ minecraft_config               = {
       MOTD                     = "ZeroShino server1"
       OVERRIDE_SERVER_PROPERTIES = true # Use these settings over server.roperties every time the container starts
       SNOOPER_ENABLED          = "false"
-      TYPE                     = "PAPER"
+      TYPE                     = "VANILLA"
       VERSION                  = "1.18.1"
       MEMORY                   = "3G"
     }
